@@ -156,7 +156,7 @@ import seaborn as sns
 def sinplot(n=10):
     x = np.linspace(0, 14, 100)
     for i in range(1, n + 1):
-        plt.plot(x, np.sin(x + i * 5) * (n + 2 - i))
+        plt.plot(x, np.sin(x + i * .5) * (n + 2 - i))
 sinplot()
 plt.title('Seaborn plots with Aesthetic functions')
 plt.show()
