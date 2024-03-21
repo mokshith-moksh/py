@@ -9,11 +9,9 @@ if value == value[::-1]:
 else:
     print("Not Palindrome")
 
-counted_dict = Counter(value)
-print(counted_dict)
-
-for key in counted_dict.keys():
-    print(f'{key} appears {counted_dict[key]} times')
+counted = Counter(value)
+for key in sorted(counted.keys())
+    print(f'{key} appears {counted[key] times}')
 
 # EXP 2a ###############################################################
 def fn(n):
@@ -143,7 +141,7 @@ plt.show()
 import matplotlib.pyplot as plt
 overs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 runs_scored = [0, 7, 12, 20, 39, 49, 61, 83, 86, 97, 113, 116, 123, 137, 145, 163, 172, 192, 198, 198, 203]
-plt.plot(overs, runs_scored, marker='X', linestyle='dashed', color='red', linewidth=2, markerfacecolor='blue', markersize=8)
+plt.plot(overs, runs_scored)
 plt.xlabel('Overs', color='green')
 plt.ylabel('Runs scored')
 plt.title('Run scoring in a T20 Cricket Match')
